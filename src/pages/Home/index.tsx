@@ -1,5 +1,11 @@
+import PresentationSection from '../../components/PresentationSection';
+
 const Home = () => {
-    return <div>Home</div>;
+    return (
+        <div>
+            <PresentationSection />
+        </div>
+    );
 };
 
 export default Home;
