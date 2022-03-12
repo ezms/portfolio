@@ -5,6 +5,7 @@ export default createGlobalStyle`
     
     :root {
         --white-color: #F2F2F2;
+        --white-color-2: #E1E1E1; 
         --light-gray-color: #8C8C8C;
         --gray-color: #595959;
         --dark-gray-color: #404040;
@@ -18,7 +19,11 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
-        overflow: hidden;
+    }
+    
+    body {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
     }
 
     img {

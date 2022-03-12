@@ -40,8 +40,9 @@ export const PresentationTitle = styled.h1`
     color: var(--white-color);
     font-family: var(--roboto-mono-font);
     font-weight: 700;
-    line-height: 40px;
     font-size: 40px;
+    line-height: 40px;
+    overflow: hidden;
 `;
 
 export const PresentationText = styled.p`
