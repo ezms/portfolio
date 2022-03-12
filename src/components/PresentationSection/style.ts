@@ -49,4 +49,6 @@ export const PresentationText = styled.p`
     font-family: var(--roboto-mono-font);
     font-weight: 700;
     font-size: 25px;
+    max-width: 575px;
+    margin-inline: auto;
 `;

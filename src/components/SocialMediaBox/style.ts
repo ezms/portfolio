@@ -9,5 +9,5 @@ export const SocialMediaContainer = styled.div`
 
     position: absolute;
     top: 10px;
-    left: 10px;
+    right: 10px;
 `;

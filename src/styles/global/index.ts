@@ -10,7 +10,7 @@ export default createGlobalStyle`
         --dark-gray-color: #404040;
         --black-color: #1B1B1B;
 
-        --roboto-mono-font: 'Roboto Mono', monospace;;
+        --roboto-mono-font: 'Roboto Mono', monospace;
     }
 
     * {
@@ -18,6 +18,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         text-decoration: none;
+        overflow: hidden;
     }
 
     img {

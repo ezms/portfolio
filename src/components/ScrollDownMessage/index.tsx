@@ -1,8 +1,14 @@
-import { ScrollDownMessageBox, ScrollDownMessageText } from './style';
+import {
+    ScrollDown,
+    ScrollDownMessageBox,
+    ScrollDownMessageText,
+} from './style';
 
 export const ScrollDownMessage = () => (
     <ScrollDownMessageBox>
         <ScrollDownMessageText>scroll down</ScrollDownMessageText>
-        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+        <ScrollDown>
+            <span></span>
+        </ScrollDown>
     </ScrollDownMessageBox>
 );
