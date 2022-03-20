@@ -1,8 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-    
     :root {
         --white-color: #F2F2F2;
         --white-color-2: #E1E1E1; 
@@ -12,6 +10,7 @@ export default createGlobalStyle`
         --black-color: #1B1B1B;
 
         --roboto-mono-font: 'Roboto Mono', monospace;
+        --inter-font: 'Inter', sans-serif;
     }
 
     * {
@@ -25,7 +24,7 @@ export default createGlobalStyle`
         scroll-behavior: smooth;
         overflow-x: hidden;
     }
-
+    
     img {
         object-fit: cover;
     }

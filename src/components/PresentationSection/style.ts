@@ -16,6 +16,7 @@ export const PresentationBackground = styled.div`
     background-repeat: no-repeat;
     filter: brightness(0.35);
 
+    max-width: 100vw;
     height: 100%;
     width: 100%;
 `;
@@ -42,14 +43,14 @@ export const PresentationTitle = styled.h1`
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
-    overflow: hidden;
+    margin-bottom: 2em;
 `;
 
 export const PresentationText = styled.p`
     color: var(--white-color);
     font-family: var(--roboto-mono-font);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 21px;
     max-width: 575px;
     margin-inline: auto;
 `;

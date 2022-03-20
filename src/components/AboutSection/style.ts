@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const AboutSectionContainer = styled.section`
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    padding: 3em 0;
     background-color: var(--white-color-2);
+
+    @media (min-width: 1024px) {
+        height: 100vh;
+    }
 `;
 
 export const AboutSectionTitle = styled.h2`
