@@ -33,4 +33,10 @@ export default createGlobalStyle`
         }
     }
 
+    @keyframes typing {
+        100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    }
 `;
