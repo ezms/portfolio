@@ -20,9 +20,14 @@ export default createGlobalStyle`
         text-decoration: none;
     }
     
-    body {
+    html {
         scroll-behavior: smooth;
+    }
+    
+    body {
         overflow-x: hidden;
+        scrollbar-width: thin;
+	    scrollbar-color: var(--gray-color) transparent;
     }
     
     img {
@@ -37,6 +42,32 @@ export default createGlobalStyle`
         :hover {
             cursor: pointer;
         }
+    }
+
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--dark-gray-color);
+        border: 0px none transparent;
+        border-radius: 50px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--white-color-2);
+        border: 0px none transparent;
+        border-radius: 50px;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: transparent;
     }
 `;
 
