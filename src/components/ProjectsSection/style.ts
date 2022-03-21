@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const ProjectsSectionContainer = styled.section`
+    display: flex;
+    flex-direction: column;
+
     background-color: var(--white-color-2);
     min-height: 100vh;
     padding-bottom: 3em;
@@ -24,27 +27,53 @@ export const ProjectsTitle = styled.h2`
 export const ProjectList = styled.ul`
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+    gap: 50px;
+
+    margin-top: 2em;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    @media (min-width: 1134px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin-inline: auto;
+    }
 `;
 
 export const Project = styled.li`
     margin-top: 2.5em;
 `;
 
-export const ProjectTitle = styled.h3`
-    color: var(--dark-gray-color);
-    text-transform: capitalize;
-    line-height: 100px;
-    font-family: 'Inter', serif;
-    padding-left: 10px;
-`;
+export const ToPortfolioPage = styled.button`
+    background-color: transparent;
+    border: 2px solid transparent;
+    align-self: center;
 
-export const ProjectCard = styled.div`
-    display: grid;
-    place-items: center;
+    color: var(--gray-color);
+    font-size: 24px;
 
-    img {
-        width: 80%;
-        height: 300px;
+    max-width: 150px;
+    min-width: 100px;
+    width: 80%;
+    height: 50px;
+
+    margin-inline: auto;
+    margin-top: 3rem;
+
+    :hover {
+        color: var(--black-color);
+        border-bottom: 2px solid var(--dark-gray-color);
+    }
+
+    :focus {
+        outline: none;
     }
 `;
