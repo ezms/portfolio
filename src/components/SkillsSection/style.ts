@@ -9,6 +9,7 @@ export const SkillSectionContainer = styled.section`
 
 export const TechsBox = styled.div`
     height: 100%;
+    padding-bottom: 3em;
 `;
 
 export const SkillSectionTitle = styled.h2`
