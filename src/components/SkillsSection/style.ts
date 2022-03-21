@@ -23,11 +23,16 @@ export const SkillSectionTitle = styled.h2`
 export const TechList = styled.ul`
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 60px;
     width: 100%;
     max-width: 900px;
     margin-top: 5em;
     margin-inline: auto;
+
+    @media (min-width: 1024px) {
+        justify-content: flex-start;
+    }
 `;
 
 export const Tech = styled.li`

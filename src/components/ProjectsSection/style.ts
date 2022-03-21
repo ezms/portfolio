@@ -15,7 +15,7 @@ export const ProjectsTitle = styled.h2`
     border-bottom: 2px solid var(--gray-color);
     margin-inline: auto;
     margin-top: 2em;
-    width: 365px;
+    max-width: 365px;
 `;
 
 export const ProjectList = styled.ul`
