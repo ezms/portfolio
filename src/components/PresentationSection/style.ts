@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import BackGroundGif from './../../assets/gifs/monophy.gif';
 
 export const PresentationSectionContainer = styled.section`
     display: grid;
@@ -9,19 +8,11 @@ export const PresentationSectionContainer = styled.section`
     width: 100vw;
 `;
 
-export const PresentationBackground = styled.div`
-    background-image: url(${BackGroundGif});
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: brightness(0.35);
-
-    max-width: 100vw;
-    height: 100%;
-    width: 100%;
-`;
-
 export const PresentationTitleContainer = styled.div`
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -50,7 +41,7 @@ export const PresentationText = styled.p`
     color: var(--white-color);
     font-family: var(--roboto-mono-font);
     font-weight: 700;
-    font-size: 21px;
+    font-size: 24px;
     max-width: 575px;
     margin-inline: auto;
 `;
