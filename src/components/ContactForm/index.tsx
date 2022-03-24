@@ -22,8 +22,6 @@ const ContactForm = () => {
         formState: { errors },
     } = useForm({ resolver: yupResolver(schema) });
 
-    const form = useRef<HTMLHeadingElement | any>();
-
     const toSubmit = (data: any) => {
         emailjs
             .send('gmailMessage', 'template_kdcakt9', data, 'jnvfv468kKwTUIHrC')
@@ -43,11 +41,12 @@ const ContactForm = () => {
                     );
                 }
             );
+
         reset();
     };
 
     return (
-        <ContactFormContainer ref={form} onSubmit={handleSubmit(toSubmit)}>
+        <ContactFormContainer onSubmit={handleSubmit(toSubmit)}>
             <input
                 type="text"
                 placeholder="Nome*"
