@@ -3,7 +3,13 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import emailjs from 'emailjs-com/';
-import swal from 'sweetalert';
+import toast from 'react-hot-toast';
+
+const toastStyle = {
+    width: '300px',
+    height: '50px',
+    fontSize: '24px',
+};
 
 const ContactForm = () => {
     const emptyMessage = 'Este campo não pode estar vazio!';
@@ -14,29 +20,25 @@ const ContactForm = () => {
         message: yup.string().required(emptyMessage),
     });
 
-    const {
-        register,
-        handleSubmit,
-        reset,
-        formState: { errors },
-    } = useForm({ resolver: yupResolver(schema) });
+    const { register, handleSubmit, reset } = useForm({
+        resolver: yupResolver(schema),
+    });
 
     const toSubmit = (data: any) => {
         emailjs
             .send('gmailMessage', 'template_kdcakt9', data, 'jnvfv468kKwTUIHrC')
             .then(
                 (result) => {
-                    swal(
-                        'Email recebido! 🎉',
-                        'Irei retornar em breve!',
-                        'success'
-                    );
+                    toast.success('Email enviado! 🎉', {
+                        style: toastStyle,
+                    });
                 },
                 (error) => {
-                    swal(
-                        'Algo deu errado 😿',
-                        'Desculpa pelo inconveniente, em manutenção 🛠',
-                        'error'
+                    toast.error(
+                        'Ops, algo deu errado, estamos em manutenção 🛠',
+                        {
+                            style: toastStyle,
+                        }
                     );
                 }
             );
