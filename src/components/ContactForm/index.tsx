@@ -1,9 +1,10 @@
-import { useRef } from 'react';
+import { FormEvent, useRef } from 'react';
 import { ContactFormContainer } from './style';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import emailjs from 'emailjs-com/';
+import swal from 'sweetalert';
 
 const ContactForm = () => {
     const emptyMessage = 'Este campo não pode estar vazio!';
@@ -17,28 +18,32 @@ const ContactForm = () => {
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors },
     } = useForm({ resolver: yupResolver(schema) });
 
     const form = useRef<HTMLHeadingElement | any>();
 
-    const toSubmit = (data: any, event: any) => {
-        event.target.reset();
+    const toSubmit = (data: any) => {
         emailjs
-            .send(
-                'gmailMessage',
-                'template_kdcakt9',
-                form.current,
-                'jnvfv468kKwTUIHrC'
-            )
+            .send('gmailMessage', 'template_kdcakt9', data, 'jnvfv468kKwTUIHrC')
             .then(
                 (result) => {
-                    console.log(result.text);
+                    swal(
+                        'Email recebido! 🎉',
+                        'Irei retornar em breve!',
+                        'success'
+                    );
                 },
                 (error) => {
-                    console.error(error.text);
+                    swal(
+                        'Algo deu errado 😿',
+                        'Desculpa pelo inconveniente, em manutenção 🛠',
+                        'error'
+                    );
                 }
             );
+        reset();
     };
 
     return (
@@ -55,7 +60,6 @@ const ContactForm = () => {
                 required
                 {...register('email')}
             />
-            <input type="url" placeholder="Links" {...register('link')} />
             <textarea
                 placeholder="Mensagem*"
                 required

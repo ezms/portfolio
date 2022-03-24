@@ -6,8 +6,7 @@ import MyServicesSection from '../../components/MyServicesSection';
 import PresentationSection from '../../components/PresentationSection';
 import ProjectsSection from '../../components/ProjectsSection';
 import SkillsSection from '../../components/SkillsSection';
-import WorkTogetherSection from '../../components/WorkTogetherSection';
-import { HomePageContainer } from './style';
+import { ContactFormBox, HomePageContainer } from './style';
 
 const Home = () => {
     return (
@@ -17,11 +16,10 @@ const Home = () => {
             <MyServicesSection />
             <SkillsSection />
             <ProjectsSection />
-            <WorkTogetherSection />
-            <div>
+            <ContactFormBox>
                 <ContactMessage />
                 <ContactForm />
-            </div>
+            </ContactFormBox>
             <Footer />
         </HomePageContainer>
     );

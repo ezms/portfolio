@@ -7,10 +7,16 @@ export const ContactMessageDescription = styled.div`
     align-items: flex-start;
     gap: 10px;
 
-    padding: 10px;
     height: 13.7em;
+    width: 95%;
+    margin-inline: auto;
+    padding: 10px;
 
     font-family: 'Inter', serif;
+
+    @media (min-width: 1024px) {
+        align-items: center;
+    }
 `;
 
 export const PrimaryTitle = styled.h1`
@@ -22,6 +28,6 @@ export const PrimaryTitle = styled.h1`
 `;
 
 export const Description = styled.p`
-    font-size: 14px;
+    font-size: 18px;
     font-weight: lighter;
 `;
