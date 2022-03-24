@@ -1,4 +1,3 @@
-import React from 'react';
 import { SocialMediaLink } from '../SocialMediaLink';
 import {
     FooterContainer,

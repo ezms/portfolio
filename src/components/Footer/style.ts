@@ -10,10 +10,14 @@ export const FooterContainer = styled.footer`
     background-color: var(--black-color);
     min-height: 40vh;
     padding-bottom: 1em;
+
+    @media (min-width: 768px) {
+        justify-content: center;
+    }
 `;
 
 export const FooterSection = styled.section`
-    margin: 5rem 3em;
+    margin: 2rem;
 `;
 
 export const FooterTitle = styled.h2`
@@ -59,8 +63,9 @@ export const FooterScrollTopButton = styled.button`
     color: var(--white-color);
     transition: all 0.3s;
 
-    position: absolute;
-    left: 90%;
+    position: relative;
+    bottom: -290px;
+    left: 60%;
 
     :hover {
         box-shadow: var(--gray-color) 0px 2px 8px;
@@ -68,5 +73,18 @@ export const FooterScrollTopButton = styled.button`
 
     ion-icon {
         font-size: 40px;
+    }
+
+    @media (min-width: 410px) {
+        bottom: -260px;
+    }
+
+    @media (min-width: 502px) {
+        bottom: -230px;
+    }
+
+    @media (min-width: 768px) {
+        position: static;
+        float: right;
     }
 `;

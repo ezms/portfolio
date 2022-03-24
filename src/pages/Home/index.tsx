@@ -1,4 +1,6 @@
 import AboutSection from '../../components/AboutSection';
+import ContactForm from '../../components/ContactForm';
+import ContactMessage from '../../components/ContactMessage';
 import Footer from '../../components/Footer';
 import MyServicesSection from '../../components/MyServicesSection';
 import PresentationSection from '../../components/PresentationSection';
@@ -16,6 +18,10 @@ const Home = () => {
             <SkillsSection />
             <ProjectsSection />
             <WorkTogetherSection />
+            <div>
+                <ContactMessage />
+                <ContactForm />
+            </div>
             <Footer />
         </HomePageContainer>
     );
