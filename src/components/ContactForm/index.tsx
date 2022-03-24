@@ -1,4 +1,3 @@
-import { FormEvent, useRef } from 'react';
 import { ContactFormContainer } from './style';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
