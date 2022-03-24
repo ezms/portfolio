@@ -15,8 +15,15 @@ import MountainUnderBlocks from './../../assets/gifs/mountain-under-blocks.gif';
 import ProgrammingHorse from './../../assets/gifs/programming-horse.gif';
 import Spectre1 from './../../assets/gifs/spectre.gif';
 import Spectre2 from './../../assets/gifs/spectre2.gif';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const PresentationSection = () => {
+    useEffect(() => {
+        Aos.init();
+    }, []);
+
     return (
         <PresentationSectionContainer>
             <BackgroundSlider
@@ -35,8 +42,13 @@ const PresentationSection = () => {
             <SocialMediaBox />
             <PresentationTitleContainer>
                 <SignalsContainer />
-                <PresentationTitle>FullStack Developer</PresentationTitle>
-                <PresentationText>
+                <PresentationTitle
+                    data-aos="fade-down"
+                    data-aos-duration="3000"
+                >
+                    FullStack Developer
+                </PresentationTitle>
+                <PresentationText data-aos="fade-up" data-aos-duration="3000">
                     Olá! Meu nome é Emanuel Z. Martins, nos últimos anos comecei
                     a trabalhar com programação front-end em start-ups e
                     projetos freelance!
