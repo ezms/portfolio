@@ -34,6 +34,10 @@ const Footer = () => {
                         anchor="https://github.com/ezms"
                         iconName="logo-github"
                     />
+                    <SocialMediaLink
+                        anchor="https://web.whatsapp.com/send?phone=+5546999207432"
+                        iconName="logo-whatsapp"
+                    />
                 </SocialMediaBox>
             </FooterSection>
             <FooterInfos>&copy; Copyright 2021 - Emanuel Martins.</FooterInfos>
