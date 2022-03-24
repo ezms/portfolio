@@ -15,4 +15,4 @@ tools I use in this project:
  - Aos
  - Framer Motion
  - Styled Components
- 
+ - IonIcons
