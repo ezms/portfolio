@@ -1,4 +1,5 @@
 import AboutSection from '../../components/AboutSection';
+import AnimateContainer from '../../components/AnimateContainer';
 import ContactForm from '../../components/ContactForm';
 import ContactMessage from '../../components/ContactMessage';
 import Footer from '../../components/Footer';
@@ -10,18 +11,20 @@ import { ContactFormBox, HomePageContainer } from './style';
 
 const Home = () => {
     return (
-        <HomePageContainer>
-            <PresentationSection />
-            <AboutSection />
-            <MyServicesSection />
-            <SkillsSection />
-            <ProjectsSection />
-            <ContactFormBox>
-                <ContactMessage />
-                <ContactForm />
-            </ContactFormBox>
-            <Footer />
-        </HomePageContainer>
+        <AnimateContainer>
+            <HomePageContainer>
+                <PresentationSection />
+                <AboutSection />
+                <MyServicesSection />
+                <SkillsSection />
+                <ProjectsSection />
+                <ContactFormBox>
+                    <ContactMessage />
+                    <ContactForm />
+                </ContactFormBox>
+                <Footer />
+            </HomePageContainer>
+        </AnimateContainer>
     );
 };
 
