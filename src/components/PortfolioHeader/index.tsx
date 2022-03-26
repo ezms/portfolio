@@ -10,7 +10,7 @@ const PortfolioHeader = () => {
 
     return (
         <PortfolioHeaderContainer>
-            <PortifolioBanner></PortifolioBanner>
+            <PortifolioBanner />
             <PortfolioBannerTitle>
                 <h1>Portfólio</h1>
             </PortfolioBannerTitle>

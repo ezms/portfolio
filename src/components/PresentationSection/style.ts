@@ -9,6 +9,7 @@ export const PresentationSectionContainer = styled.section`
 `;
 
 export const BackgroundSlideShow = styled.video`
+    filter: brightness(0.75);
     position: fixed;
     z-index: -1;
     top: 0;
