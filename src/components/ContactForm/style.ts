@@ -31,6 +31,7 @@ export const ContactFormContainer = styled.form`
 
         ::placeholder {
             color: var(--light-gray-color);
+            border-bottom: 1px solid var(--black-color);
         }
     }
 
