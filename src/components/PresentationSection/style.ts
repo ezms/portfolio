@@ -8,6 +8,23 @@ export const PresentationSectionContainer = styled.section`
     width: 100vw;
 `;
 
+export const BackgroundSlideShow = styled.video`
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    @media (min-aspect-ratio: 16/9) {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-aspect-ratio: 16/9) {
+        width: auto;
+        height: 100vh;
+    }
+`;
+
 export const PresentationTitleContainer = styled.div`
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
