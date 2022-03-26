@@ -17,6 +17,14 @@ export const ContactFormContainer = styled.form`
         max-width: 900px;
         width: 95%;
 
+        :hover {
+            border-bottom: 1px solid var(--dark-gray-color);
+
+            ::placeholder {
+                color: var(--dark-gray-color);
+            }
+        }
+
         :focus {
             border-bottom: 1px solid;
             transform: translateX(1);
@@ -31,10 +39,6 @@ export const ContactFormContainer = styled.form`
 
         ::placeholder {
             color: var(--light-gray-color);
-        }
-
-        :hover {
-            border-bottom: 1px solid var(--black-color);
         }
     }
 
