@@ -10,7 +10,6 @@ tools I use in this project:
  - React Router Dom v6 
  - React Hook Form
  - React Hot Toast
- - React Background Slider
  - Emailjs-com
  - Aos
  - Framer Motion
