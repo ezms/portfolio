@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const AboutSectionContainer = styled.section`
-    height: 100%;
+    min-height: 100%;
     padding: 3em 0;
     background-color: var(--white-color-2);
 
     @media (min-width: 1024px) {
-        height: 100vh;
+        min-height: 100vh;
     }
 `;
 
@@ -30,4 +30,27 @@ export const AboutText = styled.p`
     max-width: 75vw;
     margin-inline: auto;
     margin-top: 3em;
+`;
+
+export const AboutDownloadCV = styled.a`
+    display: block;
+    margin-top: 5em;
+    margin-inline: auto;
+    width: 9rem;
+
+    font-family: var(--roboto-mono-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    color: var(--gray-color);
+    border-bottom: 2px solid var(--gray-color);
+
+    transition: all 0.3s;
+
+    :hover {
+        line-height: 45px;
+        color: var(--black-color);
+        border-bottom: 2px solid var(--black-color);
+    }
 `;

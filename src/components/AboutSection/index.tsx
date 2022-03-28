@@ -1,4 +1,9 @@
-import { AboutSectionContainer, AboutSectionTitle, AboutText } from './style';
+import {
+    AboutDownloadCV,
+    AboutSectionContainer,
+    AboutSectionTitle,
+    AboutText,
+} from './style';
 
 const anchorStyle = {
     color: '#595959',
@@ -6,6 +11,8 @@ const anchorStyle = {
 };
 
 const AboutSection = () => {
+    const downloadPath = './../../assets/documents/CV Emanuel Zago Martins.pdf';
+
     return (
         <AboutSectionContainer>
             <AboutSectionTitle>Sobre</AboutSectionTitle>
@@ -40,6 +47,9 @@ const AboutSection = () => {
                 . Atualmente estou buscando uma oportunidade de me inserir no
                 mercado como programador Front-End ou Back-end.
             </AboutText>
+            <AboutDownloadCV href={downloadPath} download>
+                Download My CV
+            </AboutDownloadCV>
         </AboutSectionContainer>
     );
 };
