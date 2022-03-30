@@ -79,7 +79,7 @@ export const techsImPraticing = [
         url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg',
     },
     {
-        tech: 'AWS',
-        url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+        tech: 'Docker',
+        url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
     },
 ];
