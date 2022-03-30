@@ -1,10 +1,10 @@
 import Tasko from './../assets/images/projects/tasko.webp';
-import PCBuilder from './../assets/images/projects/pc-builder-api.png';
+import PCBuilder from './../assets/images/projects/pc-builder-api.webp';
 import KenzieShoes from './../assets/images/projects/KenzieShoes.webp';
 import Comentarios from './../assets/images/projects/comments.webp';
 import Kirby from './../assets/images/projects/kirby.webp';
 import Hanoi from './../assets/images/projects/hanoi-tower.webp';
-import Ball from './../assets/images/projects/magical8ball.png';
+import Ball from './../assets/images/projects/magical8ball.webp';
 import Four from './../assets/images/projects/lig4.webp';
 
 export const myProjectList = [

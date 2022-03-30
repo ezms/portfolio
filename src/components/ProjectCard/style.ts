@@ -21,7 +21,6 @@ export const ProjectCardContainer = styled.div`
 export const ProjectThumbnail = styled.img`
     max-width: 100%;
     max-height: 100%;
-
     width: 250px;
     height: 190px;
 
