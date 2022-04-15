@@ -11,7 +11,8 @@ const anchorStyle = {
 };
 
 const AboutSection = () => {
-    const downloadPath = './../../assets/documents/CV Emanuel Zago Martins.pdf';
+    const downloadPath =
+        'https://drive.google.com/u/2/uc?id=1bVFicdadpPlTc58Tkg-qpOtrrkAtsL7t&export=download';
 
     return (
         <AboutSectionContainer>
@@ -47,7 +48,7 @@ const AboutSection = () => {
                 . Atualmente estou buscando uma oportunidade de me inserir no
                 mercado como programador Front-End ou Back-end.
             </AboutText>
-            <AboutDownloadCV href={downloadPath} download>
+            <AboutDownloadCV href={downloadPath} target="_blank" download>
                 Download My CV
             </AboutDownloadCV>
         </AboutSectionContainer>
